@@ -1,4 +1,4 @@
-# Robocon Robot Alignment using Lidar and Raspberry Pi
+# Omniwheel Robot Angle Alignment using Lidar and Raspberry Pi
 
 ## Overview
 
@@ -25,15 +25,15 @@ This repository contains the code and documentation for aligning a Robocon robot
 
 ## File Structure
 
-- `/raspberry_pi_code`[](): Contains the Python code for obtaining Lidar data and computing angle values.
-- `/arduino_mega_code`: Contains the Arduino code for executing the alignment algorithm.
-- `/docs`: Documentation related to the project.
+- [`/LIDAR_AL.py`](https://github.com/Vipsy-123/Lidar_raspi/blob/main/LIDAR_AL.py): Contains the Python code for obtaining Lidar data and computing angle values.
+- [`/RPLidarReciving.ino`](https://github.com/Vipsy-123/Lidar_raspi/blob/main/RPLidarReciving.ino): Contains the Arduino code for executing the alignment algorithm.
+
 
 ## Usage
 
-1. Navigate to the `/raspberry_pi_code` directory.
-2. Run the Raspberry Pi code:
+1. Run the Raspberry Pi code:
    ```bash
-   python3 lidar_alignment.py
-   
-  ```
+     $ python3 LIDAR_AL.py
+   ```
+2. On Arduino Mega upload RPLidarReciving.ino code .
+3. Connect Raspberry Pi USB port to Mega
